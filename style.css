@@ -315,7 +315,7 @@ nav a:hover {
 }
 
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1300px) {
     .main-container {
         grid-template-columns: 1fr;
         padding: 20px;
@@ -343,5 +343,41 @@ nav a:hover {
         display: flex;
         justify-content: center;
         gap: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /* Override the 750px rule to stack sidebar items vertically */
+    .sidebar {
+        display: block;
+        gap: 30px;
+        /* Adjust gap for vertical stacking */
+    }
+
+    /* Reduce padding on main sections to save space */
+    .sidebar,
+    .main-content {
+        padding: 20px;
+    }
+
+    .main-container {
+        padding: 15px;
+        gap: 20px;
+    }
+
+    /* Reduce large heading sizes for mobile */
+    .heading {
+        font-size: 1.7rem;
+    }
+
+    .profile h2 {
+        font-size: 1.3rem;
+    }
+
+    /* Make the education timeline dot a bit smaller */
+    .dot {
+        height: 12px;
+        width: 12px;
     }
 }
